@@ -17,10 +17,10 @@ form.addEventListener('submit', (e) => {
 function checkInput(){
     //Get the values from the input
 
-    const usernameValue = username.Value.trim();
-    const emailValue = email.Value.trim();
-    const passwordValue = password.Value.trim();
-    const password2Value = password2.Value.trim();
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
 
      //username validation
 
@@ -35,7 +35,7 @@ function checkInput(){
     else{
         setSuccessFor(username);
     }
-}
+
 
 //email validation
 
@@ -68,7 +68,7 @@ if(password2Value ===''){
 }
 
 else if(password2Value !== passwordValue){
-    setErrorFor(password2, 'password is not the same')
+    setErrorFor(password2, 'password is not the same4 ')
 }
 
 else{
@@ -93,4 +93,4 @@ function setSuccessFor(input){
     formControl.className = 'form-control success';
 }
 
-
+}
